@@ -1,58 +1,112 @@
-Retail Intelligence: Dynamic Pricing & Stock Optimization Platform
-Project Overview
-This platform is a real-time retail data solution designed to synchronize sales performance with inventory management. By leveraging predictive analytics, the system automatically optimizes product pricing and streamlines stock replenishment to maximize revenue and reduce operational waste.
+# Retail Intelligence: Dynamic Pricing & Inventory Optimization Platform
 
-Key Features
-Automated Price Optimization: Dynamic price adjustments based on demand elasticity and stock levels.
+## Project Overview
 
-Predictive Demand Forecasting: Utilizing historical trends via machine learning to anticipate seasonal cycles.
+This project is a retail data engineering and analytics platform designed to improve inventory visibility and support pricing decisions using retail transactional data.
 
-Inventory Burn-Rate Analysis: Real-time tracking of stock turnover to predict "Out-of-Stock" dates.
+The system processes retail sales data, cleans and stores it in a structured SQL database, then generates analytical insights about product demand, inventory status, and pricing opportunities.
 
-Interactive Business Intelligence: A high-performance dashboard for monitoring KPIs and pricing trends.
+The goal is to help retail managers monitor product performance, detect stock risks, and support better operational decisions.
 
-Instant Telegram Alerts: Automated notifications for critical stock depletion or high-velocity sales.
+---
 
-Technologies Used
-Language: Python 3.x
+## Dataset
 
-Dashboard/UI: Streamlit (High-performance web framework)
+Source: Kaggle Retail Sales Dataset
 
-Data Engineering: Pandas & NumPy
+Main tables:
 
-Forecasting Engine: Facebook Prophet (Time-series analysis)
+* Customers
+* Products
+* Stores
+* Transactions
 
-Database: SQLite / Parquet (Optimized for fast read/write)
+The dataset contains transactional retail data including product sales, customer information, store locations, and purchase records.
 
-Alerting System: Telegram Bot API
+---
 
-System Architecture
-1. Data Processing & ETL
-The system cleans and standardizes raw transactional data, ensuring the integrity of stock levels and pricing records. We utilize caching mechanisms to ensure sub-second latency during data retrieval.
+## Key Features
 
-2. Analytics & Pricing Engine
-Demand Forecasting: Implementation of the Prophet model to predict future sales volume.
+### Sales Trend Analysis
 
-Smart Pricing Logic: An algorithmic approach that calculates the optimal price point by balancing inventory velocity with profit margins.
+Analyze daily and monthly sales trends to identify top-performing products and categories.
 
-3. Visualization & Monitoring
-A centralized dashboard built with Streamlit provides an interactive interface for managers to visualize stock health and approve automated pricing recommendations.
+### Inventory Monitoring
 
-Team Roles & Responsibilities
-Data Engineering (ETL): Pipeline construction, data cleaning, and schema management.
+Estimate stock levels using sales volume and initial stock assumptions.
 
-Analytics & Machine Learning: Developing demand forecasting models and pricing algorithms.
+### Low Stock Alerts
 
-UI/UX & Dashboard Development: Building the interactive frontend and data visualizations.
+Generate alerts when product inventory falls below threshold levels.
 
-System Integration & DevOps: Managing the Telegram alert system and platform deployment.
+### Rule-Based Price Recommendation
 
-Quality Assurance: Validating model accuracy and system reliability.
+Suggest pricing adjustments based on sales velocity and inventory levels.
 
-Project Coordination: Technical documentation and milestone management.
+### Dashboard Visualization
 
-Getting Started
-Prerequisites
-Python 3.9+
+Provide an interactive dashboard for monitoring KPIs and operational insights.
 
-Pip (Python package manager)
+### Forecasting (Extension)
+
+Predict short-term demand using moving averages or Prophet.
+
+---
+
+## Technologies Used
+
+* Python 3.x
+* Pandas & NumPy
+* SQL (MySQL / PostgreSQL / SQLite)
+* Power BI or Streamlit
+* Git & GitHub
+
+Optional:
+
+* Prophet
+* Telegram Bot API
+
+---
+
+## System Architecture
+
+Raw Data
+↓
+Cleaning & Transformation
+↓
+SQL Database
+↓
+Analysis Engine
+↓
+Dashboard
+↓
+Alerts
+
+---
+
+## Team Roles
+
+* Nada Gamal – Project Coordination, Alerts & Monitoring
+* Habiba Qawi – Database Design & SQL
+* Habiba Kamal – Data Cleaning & ETL
+* Seif Mahmoud – Data Processing & Analysis
+* Mohamed Mahmoud – Dashboard Development
+* Malak Hassan – Documentation & Presentation
+
+---
+
+
+
+## Setup
+
+Install required libraries:
+
+pip install pandas numpy openpyxl matplotlib
+
+---      
+
+## Future Enhancements
+
+* Real-time alerts
+* Predictive demand forecasting
+* Automated pricing simulation
