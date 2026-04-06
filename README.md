@@ -86,11 +86,11 @@ Alerts
 
 ## Team Roles
 
-* Nada Gamal – Project Coordination, Alerts & Monitoring
-* Habiba Qawi – Database Design & SQL
-* Habiba Kamal – Data Cleaning & ETL
-* Seif Mahmoud – Data Processing & Analysis
-* Mohamed Mahmoud – Dashboard Development
+* Nada Gamal – Project Lead, Alert Logic, Testing & Integration Monitoring
+* Habiba Qawi – Database Design, SQL Schema & Query Development
+* Habiba Kamal – Data Cleaning, ETL Pipeline & Data Validation
+* Seif Mahmoud – Sales Analytics, KPI Calculation & Pricing Logic
+* Mohamed Mahmoud – Dashboard Development & Visualization
 * Malak Hassan – Documentation & Presentation
 
 ---
